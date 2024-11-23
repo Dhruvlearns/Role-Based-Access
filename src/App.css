@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Light Mode Styles */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Specific styles for dark mode */
+.dark-mode .App {
+  background-color: #121212;
+  color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Customize Material UI buttons for dark mode */
+.dark-mode button {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.light-mode button {
+  background-color: #1976d2;
+  color: #ffffff;
 }
